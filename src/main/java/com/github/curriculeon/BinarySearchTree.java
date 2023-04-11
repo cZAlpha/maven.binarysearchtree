@@ -22,6 +22,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 
     private BinarySearchTreeNode<Key, Value> put(BinarySearchTreeNode<Key, Value> x, Key key, Value value) {
+        size++;
         return null; // TODO
     }
 
@@ -34,14 +35,17 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 
     private BinarySearchTreeNode<Key, Value> deleteMin(BinarySearchTreeNode<Key, Value> x) {
+        size--; // Only put this in the if statement that ensures that the 'x' input is in the tree
         return null; // TODO
     }
 
     private BinarySearchTreeNode<Key, Value> deleteMax(BinarySearchTreeNode<Key, Value> x) {
+        size--; // Only put this in the if statement that ensures that the 'x' input is in the tree
         return null; // TODO
     }
 
     private BinarySearchTreeNode<Key, Value> delete(BinarySearchTreeNode<Key, Value> x, Key key) {
+        size--; // Only put this in the if statement that ensures that the 'x' input is in the tree
         return null; // TODO
     }
 
