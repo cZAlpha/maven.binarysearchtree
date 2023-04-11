@@ -12,6 +12,11 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
         size = 0;
     }
 
+    public  BinarySearchTree(BinarySearchTreeNode root) {
+        this.root = root;
+        size      = 1;
+    }
+
     private Value get(BinarySearchTreeNode<Key, Value> x, Key key) {
         return null; // TODO
     }
